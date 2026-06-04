@@ -18,9 +18,10 @@
 html{scroll-behavior:smooth}
 body{font-family:'Nunito',sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden}
 .logo-mark{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
-.logo-text{font-family:'Nunito',sans-serif;font-weight:900;font-size:22px;color:var(--blue);letter-spacing:-0.5px}
+.logo-text{font-family:'Nunito',sans-serif;font-weight:900;font-size:22px;color:var(--blue);letter-spacing:-0.5px;display:none}
 .logo-mark.white .logo-text{color:white}
-.logo-img{height:34px;width:auto;min-width:34px}
+.logo-img{height:50px;width:auto;min-width:50px}
+.logo-mark.white .logo-img{height:50px}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:2px solid var(--blue-light);padding:0 5%}
@@ -336,7 +337,6 @@ footer{background:var(--blue);padding:56px 5% 32px;position:relative}
   <div class="nav-inner">
     <a href="#" class="logo-mark">
       <img id="img-nav-logo" alt="SpazaSure" class="logo-img">
-      <span class="logo-text">SPAZASURE</span>
     </a>
     <ul class="nav-links">
       <li><a href="#how">How it works</a></li>
@@ -785,7 +785,6 @@ footer{background:var(--blue);padding:56px 5% 32px;position:relative}
       <div class="fb">
         <a href="#" class="logo-mark white">
           <img id="img-footer-logo" alt="SpazaSure" class="logo-img">
-          <span class="logo-text">SPAZASURE</span>
         </a>
         <p>Digital infrastructure for township retail — connecting spaza shops to trusted supply chains, one order at a time.</p>
       </div>
